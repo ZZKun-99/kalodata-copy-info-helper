@@ -1,12 +1,24 @@
-# kalodata商品详情页-复制信息-脚本猫脚本
+# kalodata辅助脚本-复制信息用
 
-> **项目名**：kalodata商品详情页-复制信息-脚本猫脚本
-> **GitHub 仓库名**：`kalodata-product-split-scriptcat`（GitHub 仓库名只支持英文字母、数字和 `- _ .`，中文项目名保留在这里与仓库简介中）
-> **脚本文件**：`kalodata-product-split.user.js` · 版本 `2.5.0` · 作者 `zz`
+> **项目名**：kalodata辅助脚本-复制信息用
+> **英文名**：Kalodata Helper Script for Copying Info
+> **GitHub 仓库名 / 文件夹名**：`kalodata-copy-info-helper`（GitHub 仓库名只支持英文字母、数字和 `- _ .`，中文全名保留在这里与仓库简介中）
+> **脚本文件**：`kalodata-copy-info-helper.user.js` · 版本 `2.5.0` · 作者 `zz`
 
 在 [Kalodata](https://www.kalodata.com) 商品详情页（`/product`）的一侧「切」出一块可自由拖拽的预留区：网页本体按收窄后的宽度排版，空出来的一侧放自建的商品中文翻译卡片，两边逐行滚动对齐。支持关键词高亮、点选商品、**一键复制中文名**，以及把选中的商品导出成排版固定的 Excel。
 
-脚本内部 `@name` 为「Kalodata 商品页分区布局 · 网页 1560 + 固定预留区」，是单个 `.user.js` 文件、零第三方依赖的用户脚本。
+脚本内部 `@name` 与项目名一致，并附 `@name:en` 英文名；`@namespace` 保留 `workbuddy/kalodata-product-split` 以维持脚本身份。整个项目是单个 `.user.js` 文件、零第三方依赖的用户脚本。
+
+## 命名对照
+
+| 中文 | 英文 | 说明 |
+| --- | --- | --- |
+| kalodata | kalodata | 站点官方拼写，不翻译（注意不是 `kalodate`） |
+| 辅助脚本 | helper script | 比 auxiliary script 更常用、更自然 |
+| 复制信息用 | for copying info / to copy info | `use to copy`、`use copy` 都不合语法：前者应为 `used to copy`（意为"过去常复制"，不适合做名字），后者不成短语 |
+| 整名 | Kalodata Helper Script for Copying Info | 仓库 / 文件夹 slug 收敛为 `kalodata-copy-info-helper` |
+
+> 后续其他辅助脚本沿用同一套命名规则：`<站点>-<用途>-helper`，中文全名放在 README 与仓库简介里。
 
 ## 主要功能
 
@@ -27,7 +39,7 @@
 ## 安装
 
 1. 浏览器安装 **脚本猫 ScriptCat**（推荐，浏览器扩展商店搜索即可），Tampermonkey / Violentmonkey 同样兼容。
-2. 把本仓库的 `kalodata-product-split.user.js` 拖进扩展的「安装 / 新建脚本」页面，或复制全文粘贴到新建脚本里保存。
+2. 把本仓库的 `kalodata-copy-info-helper.user.js` 拖进扩展的「安装 / 新建脚本」页面，或复制全文粘贴到新建脚本里保存。
 3. 打开 `https://www.kalodata.com/product`，页面一侧出现预留区面板即安装成功。
 
 > 需要已登录 Kalodata 账号。脚本用 `@grant none` 运行在页面上下文，不使用任何 `GM_*` 特权 API，因此无需额外授权；翻译功能复用你当前的浏览器会话。
@@ -72,8 +84,8 @@ UI 全部装在一个 Shadow Root 里，与站点 CSS 完全隔离；尺寸只�
 ## 目录
 
 ```
-kalodata-product-split-scriptcat/
-├── kalodata-product-split.user.js   # 脚本本体，直接用它安装
-├── README.md                        # 本文档
+kalodata-copy-info-helper/
+├── kalodata-copy-info-helper.user.js   # 脚本本体，直接用它安装
+├── README.md                           # 本文档
 └── .gitignore
 ```
