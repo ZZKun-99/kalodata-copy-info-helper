@@ -1,0 +1,18 @@
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# 本地运行产物（导出的表格、压缩包、日志）不入库
+*.xlsx
+*.xls
+*.zip
+*.log
+
+# 本地配置与凭据，防止误提交
+.env
+.env.*
+*.local
