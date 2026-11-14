@@ -1,7 +1,6 @@
 // ==UserScript==
-// @name         kalodata辅助脚本-复制信息用
-// @name:zh-CN   kalodata辅助脚本-复制信息用
-// @name:en      Kalodata Helper Script for Copying Info
+// @name         kalodata商品排行榜-复制助手
+// @name:zh-CN   kalodata商品排行榜-复制助手
 // @namespace    workbuddy/kalodata-product-split
 // @version      2.5.0
 // @description  只在 https://www.kalodata.com/product 生效：网页本体按「1920 屏留 1560」的规则占宽，空出的那一侧做自建面板（宽度可自由拖，低于 200 自动收起）。面板内是商品中文翻译卡，与页面表格逐行滚动对齐；关键词回车即存为高亮、整卡点选导出 Excel（列宽与行高固定）。
